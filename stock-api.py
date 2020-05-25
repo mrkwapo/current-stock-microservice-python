@@ -2,7 +2,7 @@
 """
 Created on Sat May 23 21:56:29 2020
 
-@author: Kwapalapagus
+@author: Nate Kwapo
 """
 #Eureka Discovery Server
 
