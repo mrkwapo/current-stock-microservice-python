@@ -29,7 +29,7 @@ Created on Sun May 24 21:28:24 2020
 
 >flask run 
 
-## Configuration to register with Eureka Client
+# Configuration to register as a Eureka Client
 
 import py_eureka_client.eureka_client as eureka_client
 
