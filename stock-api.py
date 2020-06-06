@@ -28,7 +28,7 @@ eureka_client.init_registry_client(eureka_server="http://localhost:8761/,http://
                                 app_name="CurrentDataMS",
                                 instance_port=5000)
 
-@app.route('/stock/profile/<path:symbol>')
+@app.route('/user/stock/profile/<path:symbol>')
 def getCompanyProfileData(symbol): 
     url = "https://financialmodelingprep.com/api/v3/company/profile/{}?apikey=5df07fe2e77eb907f2496af6f4a48260".format(symbol)
     
@@ -37,7 +37,7 @@ def getCompanyProfileData(symbol):
     return json.loads(data)
 
 
-@app.route('/stock/quote/<path:symbol>')
+@app.route('/user/stock/quote/<path:symbol>')
 def getStockQuoteData(symbol): 
     url = "https://financialmodelingprep.com/api/v3/quote/{}?apikey=5df07fe2e77eb907f2496af6f4a48260".format(symbol)
 
@@ -47,7 +47,7 @@ def getStockQuoteData(symbol):
         return item
 
 
-@app.route('/stock/price/<path:symbol>')
+@app.route('/user/stock/price/<path:symbol>')
 def getStockPrice(symbol): 
     url = "https://financialmodelingprep.com/api/v3/quote-short/{}?apikey=5df07fe2e77eb907f2496af6f4a48260".format(symbol)
     
